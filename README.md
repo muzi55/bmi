@@ -2,6 +2,10 @@
 
 자신의 신장과, 체중을 입력하면 자신의 비만도와 BMI 수치를 알 수 있습니다.
 
+## gif
+
+![readmegif](https://github.com/muzi55/bmi/assets/132406946/271fa099-84f5-410d-902c-f8cb2e30e60d)
+
 ## 설치 가이드
 
 yarn install
