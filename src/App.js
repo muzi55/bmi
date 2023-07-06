@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { bmiCalculator, resetBmi } from "./redux/modules/bmi";
 import "./style/style.scss";
