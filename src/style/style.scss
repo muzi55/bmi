@@ -1,0 +1,120 @@
+body {
+    // background: red;
+}
+
+.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    text-indent: -9999px;
+}
+#layout {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #464646;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        background: darken(#f2ece4, 10%); // #b08b5a
+    }
+}
+// 공용 디자인
+
+#bmiform{
+    // background: yellow;
+    margin-bottom: 30px;
+    & p {
+        font-size: 20px;
+        margin-bottom: 10px;
+        &:nth-child(2){
+            margin-bottom: 30px;
+        }
+    }
+
+    & label {
+        display: flex;
+        & span{
+            display: block;
+            width: 120px;
+        }
+        & input {
+            padding-left: 10px;
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+    }
+}
+
+.bm-result {
+    & p{
+        margin-bottom: 10px;
+        & span{
+            margin: 0 5px;
+        }
+    }
+}
+
+
+.visual {
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    & div {
+        padding: 10px 0;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: -5px;
+            left: 0;
+            transform: translate(-50%, -100%);
+            color:black
+        }
+    }
+    & div:nth-child(2){
+        flex-grow: 1; background-color: lighten(blue, 10%);
+        &::after{
+            content: 'BMI';
+            transform: translate(0, -100%);
+        }
+        &::before{
+            content: '체중';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transform: translate(0, 100%);
+            color:#000;
+        }
+    }
+    & div:nth-child(3){
+        flex-grow: 1;background-color: darken(greenyellow, 15%);
+        &::after{
+            content: '18.5';
+        }
+    }
+    & div:nth-child(4){
+        flex-grow: 1; background-color: orange;
+        &::after{
+            content: '23';
+        }
+    }
+    & div:nth-child(5){
+        flex-grow: 3; background-color: darken(tomato, 20%) ;
+        &::after{
+            content: '25.00';
+        }
+    }
+    
+    
+    
+}
